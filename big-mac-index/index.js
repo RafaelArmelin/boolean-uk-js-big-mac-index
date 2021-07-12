@@ -25,34 +25,54 @@ const baseCurrencyVsGbpRate = 1.39;
 const usUkPpp = usBigMac/ukBigMac;
 const tradingPercentageUk = (baseCurrencyVsGbpRate-usUkPpp)/usUkPpp*100;
 
-console.log(tradingPercentageUk.toFixed(1) + "%");
+if (tradingPercentageUk >= 0){
+  console.log("Overvalued by "+tradingPercentageUk.toFixed(1) + "%")
+} else {
+  console.log("Undervalued by "+tradingPercentageUk.toFixed(1) + "%")
+}
+
 
 const brazilBigMac = 19.10;
 const baseCurrencyVsBrazilianRealRate = 0.19;
 const usBrPpp = usBigMac/brazilBigMac;
 const tradingPercentageBr = (baseCurrencyVsBrazilianRealRate-usBrPpp)/usBrPpp*100;
 
-console.log(tradingPercentageBr.toFixed(1)+"%");
+if (tradingPercentageBr >= 0){
+  console.log("Overvalued by "+tradingPercentageBr.toFixed(1) + "%")
+} else {
+  console.log("Undervalued by "+tradingPercentageBr.toFixed(1) + "%")
+}
 
 const italyBigMac = 4.89;
 const baseCurrencyVsEuroRate = 1.19;
 const usItalyPpp = usBigMac/italyBigMac;
 const tradingPercentageEuro = (baseCurrencyVsEuroRate-usItalyPpp)/usItalyPpp*100;
 
-console.log(tradingPercentageEuro.toFixed(1)+"%");
+if (tradingPercentageEuro >= 0){
+  console.log("Overvalued by "+tradingPercentageEuro.toFixed(1) + "%")
+} else {
+  console.log("Undervalued by "+tradingPercentageEuro.toFixed(1) + "%")
+}
 
 
 const kosovoBigMac = 3.49;
 const usKosovoPpp = usBigMac/kosovoBigMac;
 const tradingPercentageEuroKosovoRate = (baseCurrencyVsEuroRate-usKosovoPpp)/usKosovoPpp*100;
 
-console.log(tradingPercentageEuroKosovoRate.toFixed(1)+"%");
+if (tradingPercentageEuroKosovoRate >= 0){
+  console.log("Overvalued by "+tradingPercentageEuroKosovoRate.toFixed(1) + "%")
+} else {
+  console.log("Undervalued by "+tradingPercentageEuroKosovoRate.toFixed(1) + "%")
+}
 
 const hongKongBigMac = 2.64;
 const baseCurrencyVsHongKongDollarRate = 0.13;
 const usHongKongPpp = usBigMac/hongKongBigMac;
 const tradingPercentageHongKongDollarRate = (baseCurrencyVsHongKongDollarRate-usHongKongPpp)/usHongKongPpp*100;
 
-console.log(tradingPercentageHongKongDollarRate.toFixed(1)+"%");
-
+if (tradingPercentageHongKongDollarRate >= 0){
+  console.log("Overvalued by "+tradingPercentageHongKongDollarRate.toFixed(1) + "%")
+} else {
+  console.log("Undervalued by "+tradingPercentageHongKongDollarRate.toFixed(1) + "%")
+}
 
