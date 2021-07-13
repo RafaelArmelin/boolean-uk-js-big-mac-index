@@ -19,6 +19,7 @@ For example, using figures in July 2008:
   - the pound was thus overvalued against the dollar by 28%
 */
 
+
 const usBigMac = 5.66;
 const ukBigMac = 3.19;
 const baseCurrencyVsGbpRate = 1.39;
@@ -26,11 +27,10 @@ const usUkPpp = usBigMac/ukBigMac;
 const tradingPercentageUk = (baseCurrencyVsGbpRate-usUkPpp)/usUkPpp*100;
 
 if (tradingPercentageUk >= 0){
-  console.log("Overvalued by "+tradingPercentageUk.toFixed(1) + "%")
+  console.log("USA Big Mac vs Uk Big Mac index: ", "Overvalued by "+tradingPercentageUk.toFixed(1) + "%")
 } else {
-  console.log("Undervalued by "+tradingPercentageUk.toFixed(1) + "%")
+  console.log("USA Big Mac vs Uk Big Mac index: ", "Undervalued by "+tradingPercentageUk.toFixed(1) + "%")
 }
-
 
 const brazilBigMac = 19.10;
 const baseCurrencyVsBrazilianRealRate = 0.19;
@@ -38,9 +38,9 @@ const usBrPpp = usBigMac/brazilBigMac;
 const tradingPercentageBr = (baseCurrencyVsBrazilianRealRate-usBrPpp)/usBrPpp*100;
 
 if (tradingPercentageBr >= 0){
-  console.log("Overvalued by "+tradingPercentageBr.toFixed(1) + "%")
+  console.log("USA Big Mac vs Brazil Big Mac index: ", "Overvalued by "+tradingPercentageBr.toFixed(1) + "%")
 } else {
-  console.log("Undervalued by "+tradingPercentageBr.toFixed(1) + "%")
+  console.log("USA Big Mac vs Brazil Big Mac index: ", "Undervalued by "+tradingPercentageBr.toFixed(1) + "%")
 }
 
 const italyBigMac = 4.89;
@@ -49,9 +49,9 @@ const usItalyPpp = usBigMac/italyBigMac;
 const tradingPercentageEuro = (baseCurrencyVsEuroRate-usItalyPpp)/usItalyPpp*100;
 
 if (tradingPercentageEuro >= 0){
-  console.log("Overvalued by "+tradingPercentageEuro.toFixed(1) + "%")
+  console.log("USA Big Mac vs Italy Big Mac index: ", "Overvalued by "+tradingPercentageEuro.toFixed(1) + "%")
 } else {
-  console.log("Undervalued by "+tradingPercentageEuro.toFixed(1) + "%")
+  console.log("USA Big Mac vs Italy Big Mac index: ", "Undervalued by "+tradingPercentageEuro.toFixed(1) + "%")
 }
 
 
@@ -60,9 +60,9 @@ const usKosovoPpp = usBigMac/kosovoBigMac;
 const tradingPercentageEuroKosovoRate = (baseCurrencyVsEuroRate-usKosovoPpp)/usKosovoPpp*100;
 
 if (tradingPercentageEuroKosovoRate >= 0){
-  console.log("Overvalued by "+tradingPercentageEuroKosovoRate.toFixed(1) + "%")
+  console.log("USA Big Mac vs Kosovo Big Mac index: ", "Overvalued by "+tradingPercentageEuroKosovoRate.toFixed(1) + "%")
 } else {
-  console.log("Undervalued by "+tradingPercentageEuroKosovoRate.toFixed(1) + "%")
+  console.log("USA Big Mac vs Kosovo Big Mac index: ", "Undervalued by "+tradingPercentageEuroKosovoRate.toFixed(1) + "%")
 }
 
 const hongKongBigMac = 2.64;
@@ -71,8 +71,8 @@ const usHongKongPpp = usBigMac/hongKongBigMac;
 const tradingPercentageHongKongDollarRate = (baseCurrencyVsHongKongDollarRate-usHongKongPpp)/usHongKongPpp*100;
 
 if (tradingPercentageHongKongDollarRate >= 0){
-  console.log("Overvalued by "+tradingPercentageHongKongDollarRate.toFixed(1) + "%")
+  console.log("USA Big Mac vs HongKong Big Mac index: ", "Overvalued by "+tradingPercentageHongKongDollarRate.toFixed(1) + "%")
 } else {
-  console.log("Undervalued by "+tradingPercentageHongKongDollarRate.toFixed(1) + "%")
+  console.log("USA Big Mac vs HongKong Big Mac index: ", "Undervalued by "+tradingPercentageHongKongDollarRate.toFixed(1) + "%")
 }
 
