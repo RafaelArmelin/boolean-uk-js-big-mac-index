@@ -19,7 +19,7 @@ For example, using figures in July 2008:
   - the pound was thus overvalued against the dollar by 28%
 */
 
-const usBigMac = 3.99;
+const usBigMac = 5.66;
 const ukBigMac = 3.19;
 const baseCurrencyVsGbpRate = 1.39;
 const usUkPpp = usBigMac/ukBigMac;
